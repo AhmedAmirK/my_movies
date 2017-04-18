@@ -1,0 +1,120 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="false">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.movies.ahmedamir.mymovies.MovieActivity$MovieFragment">
+
+
+
+        <ImageView
+            android:layout_width="190dp"
+            android:layout_height="220dp"
+            android:id="@+id/poster"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/textView4" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Movie Plot Description"
+            android:textColor="@color/black"
+            android:id="@+id/overview"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/poster"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:layout_marginRight="5dp"
+            android:id="@+id/textView3"
+            android:layout_below="@+id/textView4"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Release Date"
+            android:textColor="@color/black"
+            android:id="@+id/textView4"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignStart="@+id/textView5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Vote Average"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/black"
+            android:id="@+id/textView5"
+            android:layout_below="@+id/textView3"
+            android:layout_toStartOf="@+id/textView3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/textView6"
+            android:layout_below="@+id/textView5"
+            android:layout_toEndOf="@+id/textView5" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_below="@+id/overview"
+            android:textColor="@color/black"
+            android:id="@+id/trailers_text"
+            android:text="Trailers:"/>
+
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_below="@+id/trailers_text"
+            android:id="@+id/trailers"></ListView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/reviews_text"
+            android:layout_below="@+id/trailers"
+            android:layout_margin="5dp"
+            android:textColor="@color/black"
+            android:text="User Reviews"/>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_below="@+id/reviews_text"
+            android:id="@+id/reviews"
+            android:layout_height="wrap_content"></ListView>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/star"
+            android:src="@mipmap/ic_star_holo"
+            android:layout_below="@+id/textView6"
+            android:layout_toRightOf="@+id/poster"
+
+            android:layout_margin="20dp" />
+
+    </RelativeLayout>
+
+
+
+</ScrollView>
+
+
